@@ -1,0 +1,115 @@
+Selenium notes:
+The Need
+Why do we need to do testing?
+
+What is the need for automation?
+What is selenium?
+•    Selenium is a tool
+•    It helps you to do the automation of your websites
+It supports various browsers like Chrome, Firefox, Safari, Edge.
+It supports various programming languages like Java, Python, C# etc
+
+“Please verify that you are a human”
+IT IS A PROTECTION AGAINST AUTOMATION TOOL
+
+Understanding How selenium integration works
+Steps.
+1.    Create an Intelij java project
+2.    Download the selenium package
+3.    Integrate the Selenium with the Intelij
+4.    Download the chrome driver
+
+Testing your first code
+The approach -
+
+
+
+
+
+
+In Java, a stack trace (sometimes called a backtrace) is a textual representation of the call stack at a specific point in time during the execution of a program.
+It shows the sequence of method calls that led up to the current point of execution, including the line number and file name of each method in the call chain.
+
+A remote stack trace refers to a stack trace that is obtained from a remote machine or process, typically over a network connection.
+This can be useful for debugging distributed systems or client-server applications, where errors may occur on a remote machine that is not directly accessible to the developer.
+
+To obtain a remote stack trace in Java, you can use tools such as a remote debugger or a logging framework that supports remote logging.
+ The stack trace can then be analyzed to identify the cause of the error or exception, and to help determine the appropriate course of action to fix the issue.
+
+
+
+ The APPROACH
+ 1. setProperty --> set the path to the chrome driver
+ 2. create an instance of the WebDriver
+ 3.use driver.get("URL") OR driver.navigate().to("URL")
+
+
+
+  1.DOM--> Document Object Modal
+  2.WebElement -->
+
+
+  Moazzam:
+  Selenium Class 1
+
+  What is software testing?
+  -- identify correctness and quality of the application
+
+  How many ways can we actually test?
+  -- manual
+  -- automation
+
+  When do we go for automation?
+  -- after manual testing is passed
+  -- when environment is stable
+  -- analyze our test suite and choose our automation tools
+
+  What other tools do we know for automation?
+  -- Selenium, UFT/QTP, Cucumber, TestNG, Katalon Studio
+
+  Levels of testing?
+  -- Unit test
+  -- Acceptance testing
+  -- System testing
+  -- Integration testing
+
+  Types of Testing?
+  -- Functional testing
+  -- Non- Functional testing
+      Performance testing
+      Security testing
+
+  What is Selenium?
+  -- a set of tools which helps us to automate webb applications. It is mainly used
+  to perform functional testing.
+
+
+  What is Selenium WebDriver?
+  Open source automation tool which allows us to perform actions on a web application
+  WebDriver is an interface
+
+  Advantages of Selenium WebDriver:
+  -- open source
+  -- works with different programming languages--> Java Ruby, C#, JavaScript, Python
+  -- works with multiple browsers and supports cross browser testing
+  -- OS independent --> iOS, Linux, Windows
+
+  Disadvantages of Selenium WebDriver:
+  -- No technical support
+  -- Cannot test desktop applications
+  -- no built in reports
+  -- cannot test captchas, images, videos
+  -- takes more time to create test cases
+
+  get() vs navigate()
+  -- navigate can move back, forward and refresh
+  -- get() will wait for the page to fully load whereas navigate() will not
+  -- get() will not keep the history of the browser whereas navigate() will
+
+  close() vs quit()
+  -- close() will close the current tab
+  -- quit() will quit the whole browser
+
+  fullscreen() vs maximize()
+  -- maximize() will maximize the browser and you will still be able to see url, tabs, bookmarks
+      and fullscreen() will maximize the whole web application

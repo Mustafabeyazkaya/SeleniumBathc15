@@ -1,0 +1,112 @@
+tables with pagination->> having multiple pages
+
+1. get all values of the table column on page 1
+
+2. look for the desired id
+
+3. if found()  --> click the checkbox and break;
+
+4. if not found continue until all the values are checked
+
+5. if all values are checked on the page but still not found
+
+6. click on the next page and repeat from step 2
+
+Stale Element Exception:
+
+JsExecutor -->
+scroll
+drag and drop
+click
+
+
+
+
+-------------------------------------------------------------------
+table with pagination (which has multiple pages)
+
+stale element exception: page is refreshed and elements are discarded
+solution is: get those elements again  ( if you out that into your loop you will be doing it by automatically)
+
+
+calendars:
+1. drop down,table
+
+2. calendar with a slider
+
+approach:
+1. look for month , if that is not correct
+                            click on next
+                       repeat this until you find the right month
+
+2. once the right month is found select the date
+
+--------------------------------------------------------------
+
+1. import the jars common.io
+then
+
+                ------------take screenshot--------
+           1. TakesScreenshot ss= (TakesScreenshot) driver;
+
+           2.File sourceFile=ss.getScreenshotAs(OutputType.FILE);// we choose the FILE because the screenshot that we want to take is FILE type
+
+           3.FileUtils.copyFile(sourceFile,destination)
+
+           FileUtils.copyFile(sourceFile,new File("C:/Users/mbeya/OneDrive/Desktop/SeleniumBatch15/src/ScreenShot/iou.png")); // to find this path
+                     // just click on the SeleniumBatch15 on left side of your intellij at Project section
+                     //than click on the Open In than find the path that you need to store your screenshot
+
+                                sourceFile---> the file that contains the screenshot
+                                new file----> the file where the screenshot will be saved
+
+
+-------------------------------------------------------------------------
+Js Executor (it is not needed, but good to know)
+
+you can perform a lot of various actons using hs executor
+
+1. click
+2. Scroll down or up
+3. highlight the box
+4. drag and drop
+
+approach:
+declaration
+
+    1.JavaScript Executor js=(javaScriptExecutor) driver:
+
+    call the method of script
+
+    2. js.executorscript("")  // search from google to put things in to ""
+
+
+-------------------------------------------------------------------------
+Actions Class
+
+1. click
+2. right click
+3. draganddrop
+4.hover
+5.scroll
+
+Approach;
+    1.   declaration
+        Actions action= new Actions (driver)
+
+    2.action.choose your action.perform();
+        action.draganddrop.perform();
+
+
+
+-------------------------------------------
+UpLoad File
+
+can you upload a file through window popup in selenium
+    no. can't handle in selenium
+
+1. find the WebElement to which you want to upload the file (lets sat the button that upload the file)
+
+2. WebElement.sendKeys(path)  ---> path is the path to your file that you want to upload
+extension----> any extension that is there depending on the origin of the file
+

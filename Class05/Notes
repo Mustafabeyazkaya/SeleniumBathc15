@@ -1,0 +1,151 @@
+***************Selenium Class 05*****************
+
+Approach to select checkbox single
+
+1. inspect the checkbox
+2. write down the correct locator in the DOM
+3. use ".findElement" to find the check box
+4. click on it
+
+if i want to check that check box is selected or not?
+        checkbox.isSelected(): --> TRUE (means selected)
+
+Preferred Approach ,when it comes to multiple checkboxes
+
+1. inspect then in the DOM
+2. write the locator in such a way that it is able to select all the required checkboxes
+3. use "findElements" to get all those checkboxes
+4. iterate through the list
+5. while iteration look for your desired checkbox (inspect the DOM to see which information provides you the indication that this is your desired checkbox)
+6. if the condition to make the selection
+
+============================================================================
+
+Drop Down:
+
+Two Types:
+
+1.Single Select
+2.Multi Select
+
+----------
+
+When it comes to Drop Down, we have a class in selenium that help us interact with them
+
+-------->Select Class:------> in order to be able to use the class your drop down must be made in the DOM using the SELECT tag
+
+Single Select Drop Down---->
+
+Approach:
+1.inspect the Drop Down
+2.Check if it has the select tag
+3.Write down the locator to find the WebElement drop down
+4.Declare an object of the select class(pass the WebElement in the parameters)
+5.use methods from select class to select the desired option.
+----->SelectByVisibleText();
+----->SelectByIndex();
+----->SelectByValue();
+
+
+
+Multi Select Drop Down------>
+
+Approach:
+1.inspect the Drop Down
+2.Check if it has the select tag
+3.Write down the locator to find the WebElement drop down
+4.Declare an object of the select class(pass the WebElement in the parameters)
+5.use methods from select class to select the desired option.
+
+-----------> you can use Deselect Methods also in case of multi select drop down
+
+-------> to check if dropDown is multiSelect  or ni=ot you can use isMultiple--> returns a boolean true if it is a multi select drop down
+
+------------------------Alerts--------------
+alerts are the pop-up windows that appear and without dealing with them you can not proceed on with doing anything else
+
+you can nit inspect them.
+
+3 Types of Alerts;
+
+1.Java Script alerts------> using SwitchTo commands.
+2.Html based alerts--->
+
+
+
+Moazzam:
+Approach to select the single checkbox:
+
+Inspect the checkbox.
+Write down the correct locator in the DOM.
+Use findElement to find the checkbox.
+Click on it.
+If you want to check whether the checkbox is selected or not:
+
+checkbox.isSelected(); // returns true if selected
+Preferred approach for selecting multiple checkboxes:
+
+Inspect them in the DOM.
+Write the locator in such a way that it is able to select all the required checkboxes.
+Use findElements to get all those checkboxes.
+Iterate through the list.
+While iterating, look for your desired checkbox (inspect the DOM to see which information provides you the indication that this is your desired checkbox).
+Use an if statement to make the selection.
+..............................................Drop Down.....................................................
+
+Drop Down:
+
+Two types:
+
+Single select
+Multi-select
+When it comes to drop-downs, we have a class in Selenium that helps us interact with them:
+
+Select class - in order to be able to use this class, your dropdown must be made in the DOM using the SELECT tag.
+Single Select Drop Down Approach:
+
+Inspect the dropdown.
+Check if it has the SELECT tag.
+Write down the locator to find the WebElement dropdown.
+Declare an object of the Select class (pass the WebElement in the parameters).
+Use methods from the Select class to select the desired option:
+selectByVisibleText();
+selectByValue();
+selectByIndex();
+Multi-Select Drop Down Approach:
+
+Inspect the dropdown.
+Check if it has the SELECT tag.
+Write down the locator to find the WebElement dropdown.
+Declare an object of the Select class (pass the WebElement in the parameters).
+Use methods to select the desired option:
+selectByVisibleText();
+selectByValue();
+selectByIndex();
+You can also use deselect methods in case of a multi-select dropdown.
+To check if the dropdown is multi-select or not, you can use the isMultiple() method, which returns a boolean true if it is a multi-select dropdown.
+Note: Indexing starts from 0 if the first option is not disabled, and indexing starts from 1 if the first option is disabled.
+
+---------------------Alerts------------------------------
+
+Alerts are the popup windows that appear and without dealing with them, you cannot proceed with doing anything else. You cannot inspect them.
+
+Three types of alerts:
+
+JavaScript alerts --> using SwitchTo commands.
+HTML-based alerts/popups --> we can deal with them like other WebElements.
+Window-based --> we cannot deal with them using Selenium.
+JavaScript alerts:
+
+Simple alert.
+Confirmation alert.
+Prompt alert.
+You deal with all of them in the exact same way.
+
+--------------------------Switch To Window--------------------------------------
+
+Every time you open a new window, there is a unique handle attached to it, which is a unique code.
+
+.getWindowHandle(): Returns the handle for the current window on which the focus is.
+.getWindowHandles(): Returns the window handles of all the opened windows in a set of strings.
+It is a set because the driver doesn't know which window opened up first.

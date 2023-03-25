@@ -1,0 +1,46 @@
+Selenium Review Session:
+
+Automation Suite
+
+We have 4 Components of Selenium
+        -Selenium IDE
+        -Selenium RC
+        -Selenium webDriver  --> Selenium [4.x] (That is which we use)
+        -Selenium Grid
+
+Selenium software called in industry as sweet of industry.
+
+Open Source Tool
+        -Visualize
+        -Customize
+        -Contribute
+
+Free License Tool:
+
+Supports multiple browsers:
+        -Chrome
+        -Firefox
+        -Safari
+        -Edge
+        -IE
+        -Opera
+
+Multiple OS:
+        -Windows
+        -Mac
+        -Linux
+
+Supports Multiple Programming Languages:
+        -Java
+        -Python
+        -C++
+        -Ruby
+        -C#
+        -Php
+        -JS
+        -and others which i couldn't remember their names e.c
+
+W3C Protocol  : World Wide Web Consortium
+
+===================================================
+1- To automate
