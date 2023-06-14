@@ -36,7 +36,6 @@ public class Calendar {
 
             String monthText= month.getText();
             if(monthText.equalsIgnoreCase("January")){
-
                 //SELECT THE DAY
                List<WebElement> days = driver.findElements(By.xpath("//table[@class='dl-datepicker-calendar']/tbody/tr/td"));
                for(WebElement day:days){
@@ -47,7 +46,6 @@ public class Calendar {
                        break;
                     }
                }
-
             }
             else {
                 next.click();

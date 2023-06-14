@@ -39,5 +39,6 @@ public class dynamicTable2 {
                 driver.findElement(By.xpath("//table[@class='SampleTable']/tbody/tr["+(i+2)+"]/td[1]")).click();
 
         }}
+        driver.close();
     }
 }

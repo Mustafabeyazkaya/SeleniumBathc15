@@ -6,6 +6,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class Navigate {
     public static void main(String[] args) throws InterruptedException {
 
+
         // connect to webDriver
         System.setProperty("webdriver.chrome.driver","Driver/chromedriver.exe");
 

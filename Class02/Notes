@@ -32,7 +32,7 @@
  locators in selenium help us to find the WebElements
  8 locators we have
  id,name,className
- Linktext,partialLinktext (they can only be used for <a> and it must also have some text)
+ Link-text,partialLink-text (they can only be used for <a> and it must also have some text)
  TagName (we just need to pass the tagname and it is going to find that particular webElement)
 
  DOM --> document object model

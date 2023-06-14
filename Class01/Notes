@@ -14,9 +14,9 @@ IT IS A PROTECTION AGAINST AUTOMATION TOOL
 
 Understanding How selenium integration works
 Steps.
-1.    Create an Intelij java project
+1.    Create an IntelliJ java project
 2.    Download the selenium package
-3.    Integrate the Selenium with the Intelij
+3.    Integrate the Selenium with the IntelliJ
 4.    Download the chrome driver
 
 Testing your first code
@@ -98,7 +98,7 @@ To obtain a remote stack trace in Java, you can use tools such as a remote debug
   -- No technical support
   -- Cannot test desktop applications
   -- no built in reports
-  -- cannot test captchas, images, videos
+  -- cannot test captcha, images, videos
   -- takes more time to create test cases
 
   get() vs navigate()

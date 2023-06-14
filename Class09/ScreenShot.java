@@ -10,6 +10,7 @@ import java.util.concurrent.TimeUnit;
 
 public class ScreenShot {
     public static void main(String[] args) throws IOException {
+
         System.setProperty("webdriver.chrome.driver","Driver/chromedriver.exe");
 
         WebDriver driver=new ChromeDriver();
@@ -23,21 +24,24 @@ public class ScreenShot {
         WebElement username = driver.findElement(By.id("ctl00_MainContent_username"));
 
         username.sendKeys("Tester");
-//        enter the password
+
+        //enter the password
+
         WebElement password = driver.findElement(By.id("ctl00_MainContent_password"));
 
         password.sendKeys("test");
 
         //This is the Syntax of ScreenShot method
+
         TakesScreenshot ss= (TakesScreenshot) driver;
 
-        File sourceFile=ss.getScreenshotAs(OutputType.FILE);// we choose the FILE because the screenshot that we want to take is FILE type
+        File sourceFile=ss.getScreenshotAs(OutputType.FILE);  // we choose the FILE because the screenshot that we want to take is FILE type
 
         FileUtils.copyFile(sourceFile,new File("C:/Users/mbeya/OneDrive/Desktop/SeleniumBatch15/src/ScreenShot/iou.png")); // to find this path
+
         // just click on the SeleniumBatch15 on left side of your intellij at Project section
-        //than click on the Open In than find the path that you need to store your screenshot
 
-
+        // Than click on the Open In than find the path that you need to store your screenshot
 
     }
 }

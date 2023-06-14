@@ -48,7 +48,9 @@ public class TablesDemo {
                 String text = columns.get(i).getText();
 
                 if (text.equalsIgnoreCase("48921A")) {
+
                     System.out.println("The index number of List is " + i);
+
                     System.out.println("The index number of table is " + (i + 1)); //+1 comes from indexing difference loop start index 0, table on website starts index 1
 
                     // to click on the particular checkbox

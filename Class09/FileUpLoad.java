@@ -23,6 +23,6 @@ public class FileUpLoad {
 
         // to upload a file to the website
         chooseFile.sendKeys("C:/Users/mbeya/OneDrive/Desktop/src/screen"); // if it is not working just add  something as".txt." end of the your path as "C:/Users/mbeya/OneDrive/Desktop/src/screen.txt
-        // but this is depend on your file extention if it is txt put txt , if png put png , if zip put zip
+        // but this is depend on your file extension if it is txt put txt , if png put png , if zip put zip
     }
 }
